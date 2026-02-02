@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYS — Autonomous AI Systems</title>
+    <meta name="description" content="Autonomous AI systems deployed in 7 days.">
+<meta property="og:title" content="SYS — Autonomous AI Systems">
+<meta property="og:description" content="I diagnose operational friction and deploy custom AI agents.">
+<link rel="icon" type="image/png" href="favicon/favicon.png">    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #000000;
+            --border: #000000;
+            --muted: #666666;
+            --hover-bg: #f5f5f5;
+        }
+
+        /* HERO CTA BUTTON */
+        .cta-button {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 12px 24px;
+            background-color: var(--text);
+            color: var(--bg);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid var(--text);
+            transition: all 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--bg);
+            color: var(--text);
+            cursor: crosshair;
+        }
+
+        /* RESET & BASE */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", monospace;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.4;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* GRID LAYOUT */
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            border-left: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            max-width: 1000px;
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+
+        /* SECTIONS */
+        header, section, footer {
+            padding: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* TYPOGRAPHY */
+        .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; letter-spacing: -0.02em; }
+        h1 { font-size: clamp(32px, 5vw, 64px); font-weight: 500; letter-spacing: -0.04em; line-height: 1; margin-bottom: 24px; }
+        h2 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 32px; font-weight: 600; }
+        p { font-size: 18px; max-width: 600px; }
+
+        /* GRID UTILITY */
+        .col-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+
+        .col-item {
+            padding: 24px;
+            border-right: 1px solid var(--border);
+        }
+
+        .col-item:last-child { border-right: none; }
+        .col-item h3 { font-size: 16px; margin-bottom: 8px; font-weight: 600; }
+        .col-item p { font-size: 14px; color: var(--muted); }
+
+        /* CALENDLY WRAP */
+        .booking-container {
+            margin-top: 20px;
+            background: #fff;
+            border: 1px solid var(--border);
+        }
+
+        /* LINKS / BUTTONS */
+        .nav-link { text-decoration: none; color: var(--text); font-weight: 600; font-size: 14px; }
+        .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--border); border-radius: 100px; font-size: 12px; margin-bottom: 16px; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .col-3 { grid-template-columns: 1fr; }
+            .col-item { border-right: none; border-bottom: 1px solid var(--border); }
+            header, section { padding: 24px; }
+        }
+
+/* CASE STUDY LOGS */
+        .case-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 40px;
+            border-top: #000000 1px solid;
+            }
+        .case-card {
+            padding: 40px; /* Increased padding to match your hero/header */
+            border-right: 1px solid var(--border);
+        }
+        .case-card:last-child { border-right: none; }
+        .case-card h3 { font-size: 20px; margin-bottom: 24px; font-weight: 600; letter-spacing: -0.02em; }
+        .log-line { 
+            display: flex; 
+            font-size: 13px; 
+            margin-bottom: 8px; 
+            border-bottom: 1px dashed #e0e0e0; 
+            padding-bottom: 4px; 
+        }
+        .log-label { width: 70px; font-weight: 700; color: var(--muted); }
+        .log-val { flex: 1; }
+        .success { color: #000; font-weight: 700; }
+
+        /* Add this to your existing @media (max-width: 768px) block */
+        @media (max-width: 768px) {
+            .case-grid { grid-template-columns: 1fr; }
+            .case-card { border-right: none; border-bottom: 1px solid var(--border); }
+        }
+
+        .col-item:hover, .case-card:hover {
+    background-color: var(--hover-bg);
+    cursor: crosshair; /* Adds to the "technical" feel */
+}
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="#" class="logo nav-link mono">I X I L I S</a>
+                <span class="mono" style="font-size: 12px;">STATUS: ACTIVE</span>
+            </div>
+        </header>
+
+        <section>
+            <span class="tag mono">V1.0 — 2026</span>
+            <h1>Autonomous AI systems that eliminate manual overhead.</h1>
+            <p>I diagnose operational friction in 30 minutes, then deploy custom AI agents within 7 days. Engineered for speed and privacy.</p>
+            
+            <a href="#booking" class="cta-button mono">INITIALIZE_SYS_OS</a>
+        </section>
+
+        
+
+        <section style="padding: 0;">
+            <div class="col-3">
+                <div class="col-item">
+                    <span class="mono" style="font-size: 12px;">[01]</span>
+                    <h3>Diagnostic</h3>
+                    <p>Mapping manual bottlenecks and workflow friction.</p>
+                </div>
+                <div class="col-item">
+                    <span class="mono" style="font-size: 12px;">[02]</span>
+                    <h3>Deployment</h3>
+                    <p>Integration of autonomous agents into your stack.</p>
+                </div>
+                <div class="col-item">
+                    <span class="mono" style="font-size: 12px;">[03]</span>
+                    <h3>Scaling</h3>
+                    <p>Continuous optimization and performance monitoring.</p>
+                </div>
+            </div>
+        </section>
+
+<section style="padding: 0;">
+            <div class="case-grid">
+                <div class="case-card">
+                    <h2 class="mono" style="margin-bottom: 20px;">PROJECT_LOG: 001</h2>
+                    <h3>Autonomous Lead Nurturing</h3>
+                    <div class="log-line mono"><span class="log-label">INPUT:</span><span class="log-val">< 10 calls/mo + manual outreach</span></div>
+                    <div class="log-line mono"><span class="log-label">SYSTEM:</span><span class="log-val">AI Lead Re-engagement + Automated Nurture</span></div>
+                    <div class="log-line mono" style="border:none; margin-top:12px;"><span class="log-label">OUTPUT:</span><span class="log-val success">50 meetings/mo + 100% manual time saved</span></div>
+                </div>
+
+                <div class="case-card">
+                    <h2 class="mono" style="margin-bottom: 20px;">PROJECT_LOG: 002</h2>
+                    <h3>E-com Infrastructure</h3>
+                    <div class="log-line mono"><span class="log-label">INPUT:</span><span class="log-val">Support bottleneck + payment friction</span></div>
+                    <div class="log-line mono"><span class="log-label">SYSTEM:</span><span class="log-val">Automated CS + Fulfillment Orchestration</span></div>
+                    <div class="log-line mono" style="border:none; margin-top:12px;"><span class="log-label">OUTPUT:</span><span class="log-val success">Scaled to $17k in first 30 days</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking">
+            <h2 class="mono">Initial Consultation</h2>
+            <div class="booking-container">
+                <div class="calendly-inline-widget" 
+                     data-url="https://calendly.com/louwr1-ix/web?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=000000" 
+                     style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                </div>
+        </section>
+
+        <footer style="border-bottom: none;">
+            <div style="display: flex; justify-content: space-between; align-items: center;" class="mono">
+                <span style="font-size: 12px;">© 2026 SYS</span>
+                <span style="font-size: 12px;">Rights Reserved</span>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
